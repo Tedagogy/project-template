@@ -1,4 +1,3 @@
---h2 is typically used to setup a test database, not a prod database.
---first, drop your tables (to reset your database for testing)
---then create your tables
-afdbfdb
+drop table table1 if exists;
+create table table1( column1 int, column2 varchar(255) );
+insert into table1 (column1, column2) values (1, 'test');
